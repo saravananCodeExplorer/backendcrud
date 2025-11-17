@@ -14,7 +14,7 @@ app.use(cors());
 
 // STEP4 connect mysql
 const db  = mysql.createConnection({
-host:"render.com",
+host:"localhost",
 user:'root',
 password:'',
 database:'company'
@@ -31,7 +31,7 @@ db.connect((err)=>{
 // step2
 
 app.get('/',(req,res)=>{
-    return res.json("From backend side");
+    return res.json("From backend sideeeeeeeeeeeeeeee");
 })
 
 
