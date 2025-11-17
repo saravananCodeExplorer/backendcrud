@@ -14,7 +14,7 @@ app.use(cors());
 
 // STEP4 connect mysql
 const db  = mysql.createConnection({
-host:"localhost",
+host:"render.com",
 user:'root',
 password:'',
 database:'company'
