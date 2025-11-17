@@ -2,7 +2,7 @@ const express=require('express');
 const mysql = require('mysql');
 const cors = require('cors');
 
-// step1
+// step1 ////////////////
 const app = express();
 
 
