@@ -31,7 +31,7 @@ db.connect((err)=>{
 // step2
 
 app.get('/',(req,res)=>{
-    return res.json("From backend sideeeeeeeeeeeeeeee");
+    return res.json("From backend side");
 })
 
 
