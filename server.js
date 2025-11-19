@@ -14,10 +14,12 @@ app.use(cors());
 
 // STEP4 connect mysql
 const db  = mysql.createConnection({
-host:"localhost",
-user:'root',
-password:'',
-database:'company'
+host:process.env.HOST,
+user:process.env.USERNAME,
+password:process.env.PASSWORD,
+database:process.env.DATABASE,
+port:process.env.DBPORT,
+ssl:{rejectUnauthorized:true}
 })
 
 db.connect((err)=>{
@@ -124,9 +126,6 @@ app.delete('/staf/:id',(req,res)=>{
 
     
 })
-
-
-
 
 //step3
 const port= 8081
